@@ -12,3 +12,8 @@ char pass[] = "password";
 #define TURBIDITY_PIN  35   // Analog turbidity
 #define BUZZER_PIN     27
 #define LED_PIN        26
+float idealTempMin = 2.0;
+float idealTempMax = 6.0;
+float idealWeight  = 10.0;
+int   turbidityMin = 1000;
+int   turbidityMax = 2000;
