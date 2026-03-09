@@ -17,3 +17,15 @@ float idealTempMax = 6.0;
 float idealWeight  = 10.0;
 int   turbidityMin = 1000;
 int   turbidityMax = 2000;
+#include <WiFi.h>
+#include <BlynkSimpleEsp32.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include "HX711.h"
+
+OneWire           oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+HX711             scale;
+BlynkTimer        timer;
+
+bool alarmTriggered = false;
