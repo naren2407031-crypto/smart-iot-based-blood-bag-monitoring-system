@@ -6,3 +6,9 @@ git remote add origin https://github.com/YOUR_USERNAME/blood-bag-monitor.git
 
 char ssid[] = "ssid";
 char pass[] = "password";
+#define ONE_WIRE_BUS   14   // DS18B20 temperature
+#define HX711_DT        4   // Load cell data
+#define HX711_SCK       5   // Load cell clock
+#define TURBIDITY_PIN  35   // Analog turbidity
+#define BUZZER_PIN     27
+#define LED_PIN        26
